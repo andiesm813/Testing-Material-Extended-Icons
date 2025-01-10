@@ -30,6 +30,9 @@
 <div class="row-layout group">
   <igx-nav-drawer [isOpen]="true" [pin]="true" width="320px" #navDrawer class="nav-drawer">
     <ng-template igxDrawer>
+      <div [isHeader]="true" igxDrawerItem igxRipple>
+        <span>Header</span>
+      </div>
       <div igxDrawerItem igxRipple>
         <igx-icon family="imx-icon" name="imx-usa-party-democratic" class="icon"></igx-icon>
         <span>Material Ext Icon</span>
